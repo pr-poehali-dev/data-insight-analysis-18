@@ -11,7 +11,7 @@ export function Footer() {
                 <Icon name="Wifi" size={18} className="text-white" />
               </div>
               <h2 className="font-orbitron text-2xl font-bold text-white">
-                Сигнал<span className="text-orange-500">Про</span>
+                Plexus<span className="text-orange-500">-cam</span>
               </h2>
             </div>
             <p className="font-space-mono text-gray-400 mb-6 max-w-md">

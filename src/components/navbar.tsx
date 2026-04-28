@@ -18,7 +18,7 @@ export function Navbar({ onCallMaster }: NavbarProps) {
               <Icon name="Wifi" size={18} className="text-white" />
             </div>
             <h1 className="font-orbitron text-xl font-bold text-gray-900">
-              Сигнал<span className="text-orange-500">Про</span>
+              Plexus<span className="text-orange-500">-cam</span>
             </h1>
           </div>
 
