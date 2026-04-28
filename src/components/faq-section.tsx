@@ -3,55 +3,55 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function FAQSection() {
   const faqs = [
     {
-      question: "Насколько безопасна процедура SynapseAI?",
+      question: "Как долго занимает установка?",
       answer:
-        "Да, процедура выполняется прецизионным хирургическим роботом и прошла обширное тестирование. Все материалы биосовместимы и одобрены FDA для медицинского применения.",
+        "Стандартная установка на даче занимает 1 рабочий день. Для больших усадеб — от 2 до 3 дней. Приезжаем в удобное для вас время.",
     },
     {
-      question: "Сколько длится операция?",
+      question: "Нужно ли прокладывать кабели по всему участку?",
       answer:
-        "Малоинвазивная процедура обычно занимает 2-3 часа и проводится под местной анестезией с седацией.",
+        "Нет, мы специализируемся на беспроводных решениях. Кабель прокладывается только там, где это необходимо — например, к основной точке питания. Всё остальное — беспроводное.",
     },
     {
-      question: "Можно ли удалить устройство?",
+      question: "Будет ли работать в мороз?",
       answer:
-        "Да, SynapseAI разработан полностью обратимым. Устройство можно безопасно удалить при необходимости, хотя это требуется редко.",
+        "Да, всё оборудование имеет класс защиты IP66 и рассчитано на работу при температурах от -40°C до +60°C. Камеры и точки доступа без проблем переносят наши зимы.",
     },
     {
-      question: "Какие ощущения при использовании SynapseAI?",
+      question: "Можно ли смотреть камеры с телефона?",
       answer:
-        "Пользователи отмечают, что управление устройствами силой мысли ощущается естественно и интуитивно после короткого периода обучения. От самого импланта нет физических ощущений.",
+        "Да, настраиваем удалённый доступ на ваш смартфон. Вы видите все камеры в режиме реального времени из любой точки мира. Также настраиваем уведомления при обнаружении движения.",
     },
     {
-      question: "Как долго работает батарея?",
+      question: "Что нужно для установки интернета на даче?",
       answer:
-        "Устройство заряжается беспроводным способом и работает полный день на одном заряде. Зарядка выполняется внешним устройством, размещаемым рядом с головой.",
+        "Нам нужна точка входа интернета (кабель провайдера или 4G-роутер). Если интернета нет совсем — поможем подобрать оператора и организовать подключение.",
     },
     {
-      question: "Кто может получить SynapseAI?",
+      question: "Даёте ли гарантию на оборудование и монтаж?",
       answer:
-        "В настоящее время мы фокусируемся на людях с тяжелым параличом. Соответствие определяется через комплексную медицинскую оценку.",
+        "Да, гарантия на монтажные работы — 1 год, на оборудование — согласно гарантии производителя (обычно 1-2 года). При поломке приедем и отремонтируем бесплатно.",
     },
   ]
 
   return (
-    <section className="py-24 bg-black">
+    <section id="faq" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron">Частые вопросы</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-space-mono">
-            Ответы на популярные вопросы о технологии SynapseAI, безопасности и опыте пациентов.
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-orbitron">Частые вопросы</h2>
+          <p className="text-xl text-gray-500 max-w-3xl mx-auto font-space-mono">
+            Ответы на популярные вопросы об установке видеонаблюдения и беспроводного интернета.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-red-500/20 mb-4">
-                <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-red-400 font-orbitron px-6 py-4">
+              <AccordionItem key={index} value={`item-${index}`} className="border-orange-200 mb-4">
+                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-orange-500 font-orbitron px-6 py-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 leading-relaxed px-6 pb-4 font-space-mono">
+                <AccordionContent className="text-gray-600 leading-relaxed px-6 pb-4 font-space-mono">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

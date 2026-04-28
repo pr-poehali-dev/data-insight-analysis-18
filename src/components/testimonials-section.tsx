@@ -1,59 +1,61 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import Icon from "@/components/ui/icon"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
+    name: "Андрей Петров",
+    role: "Владелец дачи, Подмосковье",
+    initials: "АП",
     content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
+      "Поставили камеры и Wi-Fi на даче за один день. Теперь смотрю за участком прямо с телефона, когда нахожусь в городе. Очень удобно!",
   },
   {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
-    avatar: "/cybersecurity-expert-man.jpg",
+    name: "Сергей Морозов",
+    role: "Хозяин усадьбы, Ленобласть",
+    initials: "СМ",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Большая территория — 2 гектара. Ребята грамотно спроектировали сеть, всё покрыто сигналом. Камеры пишут круглосуточно, архив за месяц.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
-    avatar: "/asian-woman-tech-developer.jpg",
+    name: "Наталья Орлова",
+    role: "Владелица базы отдыха",
+    initials: "НО",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "На базе отдыха гости теперь пользуются хорошим интернетом. Камеры помогли один раз поймать нарушителей. Работа мастеров — на пятёрку!",
   },
 ]
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24 px-6 bg-card">
+    <section className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Отзывы клиентов</h2>
+          <p className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
+            Что говорят владельцы дач и усадеб после установки нашего оборудования
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="glow-border slide-up" style={{ animationDelay: `${index * 0.15}s` }}>
+            <Card key={index} className="slide-up border-orange-100 hover:border-orange-300 hover:shadow-lg transition-all duration-300" style={{ animationDelay: `${index * 0.15}s` }}>
               <CardContent className="p-6">
-                <p className="text-card-foreground mb-6 leading-relaxed italic">"{testimonial.content}"</p>
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-orange-400 fill-orange-400" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 leading-relaxed italic">"{testimonial.content}"</p>
                 <div className="flex items-center gap-4">
                   <Avatar>
-                    <AvatarImage src={testimonial.avatar || "/placeholder.svg"} alt={testimonial.name} />
-                    <AvatarFallback>
-                      {testimonial.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
+                    <AvatarFallback className="bg-orange-100 text-orange-600 font-bold">
+                      {testimonial.initials}
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="font-semibold text-primary">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="font-semibold text-orange-600">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </div>
               </CardContent>

@@ -12,7 +12,7 @@ import { Footer } from "@/components/footer"
 
 export default function Index() {
   return (
-    <div className="dark">
+    <div>
       <Navbar />
       <main>
         <Hero3D />

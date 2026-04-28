@@ -1,53 +1,54 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Icon from "@/components/ui/icon"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Видеонаблюдение 24/7",
+    description: "Камеры с ночным видением и защитой IP66 — всегда видите, что происходит на участке, даже в темноте.",
+    icon: "Camera",
+    badge: "Безопасность",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Уличный Wi-Fi",
+    description: "Беспроводная сеть охватывает весь участок: дом, баня, мангальная зона, гараж. Без мёртвых зон.",
+    icon: "Wifi",
+    badge: "Покрытие",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Монтаж под ключ",
+    description: "Приезжаем, устанавливаем, настраиваем. Вам не нужно разбираться в технике — всё работает сразу.",
+    icon: "Wrench",
+    badge: "Под ключ",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Удалённый просмотр",
+    description: "Наблюдайте за дачей со смартфона из любой точки мира. Уведомления при движении на участке.",
+    icon: "Smartphone",
+    badge: "Онлайн",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Защита от непогоды",
+    description: "Всё оборудование рассчитано на уличную эксплуатацию: морозы, дожди, ветер, перепады температур.",
+    icon: "Shield",
+    badge: "Надёжность",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Масштабируемость",
+    description: "Легко добавить новые камеры или точки доступа при расширении участка. Система растёт вместе с вами.",
+    icon: "Network",
+    badge: "Гибкость",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="services" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Наши услуги</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Профессиональное оснащение вашего загородного объекта — от мангальной зоны до большой усадьбы
           </p>
         </div>
 
@@ -55,20 +56,15 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="glow-border hover:shadow-lg transition-all duration-300 slide-up"
+              className="glow-border hover:shadow-lg transition-all duration-300 slide-up border-orange-100 hover:border-orange-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
-                  <Badge variant="secondary" className="bg-accent text-accent-foreground">
+                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                    <Icon name={feature.icon} size={24} className="text-orange-500" />
+                  </div>
+                  <Badge variant="secondary" className="bg-orange-100 text-orange-700 border-orange-200">
                     {feature.badge}
                   </Badge>
                 </div>

@@ -3,75 +3,75 @@ import { Timeline } from "@/components/ui/timeline"
 export function ApplicationsTimeline() {
   const data = [
     {
-      title: "Медицинское восстановление",
+      title: "Дачный участок",
       content: (
         <div>
-          <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Революционное лечение паралича, травм спинного мозга и нейродегенеративных заболеваний. Восстановление
-            моторных функций и независимости миллионам людей по всему миру.
+          <p className="text-gray-700 text-sm md:text-base font-normal mb-6 leading-relaxed">
+            Полное оснащение дачи: камеры по периметру, видеодомофон на калитке и стабильный Wi-Fi
+            во всех зонах отдыха. Приезжаете — всё под контролем.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Восстановление при тетра- и параплегии
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Камеры у ворот, входа и по периметру
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Контроль симптомов БАС и Паркинсона
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Wi-Fi в доме, на террасе и в зоне барбекю
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Ускорение реабилитации после инсульта
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Уведомления при появлении чужих на участке
             </div>
           </div>
         </div>
       ),
     },
     {
-      title: "Когнитивное усиление",
+      title: "Мангальная зона",
       content: (
         <div>
-          <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Усиление человеческого интеллекта, памяти и способности к обучению. Прямые нейроинтерфейсы для
-            улучшенной когнитивной производительности и обработки информации.
+          <p className="text-gray-700 text-sm md:text-base font-normal mb-6 leading-relaxed">
+            Оснащаем зоны отдыха с мангалами, беседками и барбекю: уличный Wi-Fi для гостей,
+            фоновая музыка, камеры для безопасности гулянок и охраны имущества.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Улучшение памяти и оптимизация запоминания
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Уличные точки доступа Wi-Fi для гостей
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Ускоренное обучение и освоение навыков
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Камеры с широким углом обзора
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Перевод языков в реальном времени
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Архив записей до 30 дней
             </div>
           </div>
         </div>
       ),
     },
     {
-      title: "Цифровая интеграция",
+      title: "Усадьба / большой объект",
       content: (
         <div>
-          <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Бесшовное соединение человеческого сознания с цифровыми системами. Управление устройствами,
-            доступ к информации и общение силой мысли.
+          <p className="text-gray-700 text-sm md:text-base font-normal mb-6 leading-relaxed">
+            Масштабные решения для больших территорий: многоточечный Wi-Fi, десятки камер,
+            централизованное управление. Охраняем дом, хозпостройки и всю территорию.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Управление устройствами силой мысли
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Mesh Wi-Fi — единая сеть по всей усадьбе
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Прямой доступ к интернету и облаку
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              IP-камеры с распознаванием движения
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Телепатические сети связи
+            <div className="flex items-center gap-3 text-orange-600 text-sm">
+              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+              Центральный видеорегистратор с облачным бэкапом
             </div>
           </div>
         </div>
@@ -80,13 +80,13 @@ export function ApplicationsTimeline() {
   ]
 
   return (
-    <section id="applications" className="py-20 bg-black">
+    <section id="applications" className="py-20 bg-orange-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6">Трансформирующие применения</h2>
-          <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Технологии SynapseAI открывают беспрецедентные возможности для усиления человека, медицинского
-            лечения и цифровой интеграции в множестве областей.
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-gray-900 mb-6">Объекты под ключ</h2>
+          <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            Устанавливаем видеонаблюдение и беспроводной интернет на любых загородных объектах —
+            от скромной дачи до большой усадьбы.
           </p>
         </div>
 
