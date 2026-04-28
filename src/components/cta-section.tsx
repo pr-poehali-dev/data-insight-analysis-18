@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
 
-export function CTASection() {
+interface CTASectionProps {
+  onCallMaster?: () => void
+}
+
+export function CTASection({ onCallMaster }: CTASectionProps) {
   return (
     <section className="py-24 px-6 bg-gradient-to-br from-orange-500 to-orange-600">
       <div className="max-w-4xl mx-auto text-center">
@@ -21,6 +25,7 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
+              onClick={onCallMaster}
               className="bg-white text-orange-600 hover:bg-orange-50 pulse-button text-lg px-8 py-4 font-bold"
             >
               <Icon name="Phone" size={20} className="mr-2" />
@@ -29,6 +34,7 @@ export function CTASection() {
             <Button
               size="lg"
               variant="outline"
+              onClick={onCallMaster}
               className="border-white text-white hover:bg-white hover:text-orange-600 text-lg px-8 py-4 bg-transparent"
             >
               Рассчитать стоимость

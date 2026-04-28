@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Submit lead success",
+      "method": "POST",
+      "path": "/",
+      "body": { "name": "Тест Тестов", "phone": "+79001234567", "object_type": "Дача" },
+      "expectedStatus": 200
+    },
+    {
+      "name": "Submit lead missing phone",
+      "method": "POST",
+      "path": "/",
+      "body": { "name": "Без телефона" },
+      "expectedStatus": 400
+    }
+  ]
+}
