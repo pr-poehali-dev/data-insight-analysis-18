@@ -7,7 +7,7 @@ interface CTASectionProps {
 
 export function CTASection({ onCallMaster }: CTASectionProps) {
   return (
-    <section className="py-24 px-6 bg-gradient-to-br from-orange-500 to-orange-600">
+    <section className="py-24 px-6 bg-gradient-to-br from-blue-500 to-blue-600">
       <div className="max-w-4xl mx-auto text-center">
         <div className="slide-up">
           <div className="flex justify-center mb-6">
@@ -18,7 +18,7 @@ export function CTASection({ onCallMaster }: CTASectionProps) {
           <h2 className="text-5xl font-bold text-white mb-6 font-sans text-balance">
             Готовы обезопасить свой участок?
           </h2>
-          <p className="text-xl text-orange-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
             Оставьте заявку — мастер приедет на замер бесплатно, подберёт оборудование
             и установит всё за один день.
           </p>
@@ -26,7 +26,7 @@ export function CTASection({ onCallMaster }: CTASectionProps) {
             <Button
               size="lg"
               onClick={onCallMaster}
-              className="bg-white text-orange-600 hover:bg-orange-50 pulse-button text-lg px-8 py-4 font-bold"
+              className="bg-white text-blue-600 hover:bg-blue-50 pulse-button text-lg px-8 py-4 font-bold"
             >
               <Icon name="Phone" size={20} className="mr-2" />
               Вызвать мастера
@@ -35,12 +35,12 @@ export function CTASection({ onCallMaster }: CTASectionProps) {
               size="lg"
               variant="outline"
               onClick={onCallMaster}
-              className="border-white text-white hover:bg-white hover:text-orange-600 text-lg px-8 py-4 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4 bg-transparent"
             >
               Рассчитать стоимость
             </Button>
           </div>
-          <p className="text-orange-200 text-sm mt-6">
+          <p className="text-blue-200 text-sm mt-6">
             Выезд и замер — бесплатно. Работаем в Москве и области.
           </p>
         </div>

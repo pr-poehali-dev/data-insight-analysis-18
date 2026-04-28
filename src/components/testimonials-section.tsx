@@ -39,22 +39,22 @@ export function TestimonialsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="slide-up border-orange-100 hover:border-orange-300 hover:shadow-lg transition-all duration-300" style={{ animationDelay: `${index * 0.15}s` }}>
+            <Card key={index} className="slide-up border-blue-100 hover:border-blue-300 hover:shadow-lg transition-all duration-300" style={{ animationDelay: `${index * 0.15}s` }}>
               <CardContent className="p-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Icon key={i} name="Star" size={16} className="text-orange-400 fill-orange-400" />
+                    <Icon key={i} name="Star" size={16} className="text-blue-400 fill-blue-400" />
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 leading-relaxed italic">"{testimonial.content}"</p>
                 <div className="flex items-center gap-4">
                   <Avatar>
-                    <AvatarFallback className="bg-orange-100 text-orange-600 font-bold">
+                    <AvatarFallback className="bg-blue-100 text-blue-600 font-bold">
                       {testimonial.initials}
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="font-semibold text-orange-600">{testimonial.name}</p>
+                    <p className="font-semibold text-blue-600">{testimonial.name}</p>
                     <p className="text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </div>

@@ -66,7 +66,7 @@ export function LeadFormModal({ open, onClose }: LeadFormModalProps) {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Заявка принята!</h3>
             <p className="text-gray-500 mb-6">Наш мастер свяжется с вами в течение 15 минут.</p>
-            <Button onClick={handleClose} className="bg-orange-500 hover:bg-orange-600 text-white">
+            <Button onClick={handleClose} className="bg-blue-500 hover:bg-blue-600 text-white">
               Закрыть
             </Button>
           </div>
@@ -80,7 +80,7 @@ export function LeadFormModal({ open, onClose }: LeadFormModalProps) {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="mt-1 border-orange-200 focus:border-orange-400 focus:ring-orange-400"
+                className="mt-1 border-blue-200 focus:border-blue-400 focus:ring-blue-400"
               />
             </div>
 
@@ -93,14 +93,14 @@ export function LeadFormModal({ open, onClose }: LeadFormModalProps) {
                 onChange={(e) => setPhone(e.target.value)}
                 required
                 type="tel"
-                className="mt-1 border-orange-200 focus:border-orange-400 focus:ring-orange-400"
+                className="mt-1 border-blue-200 focus:border-blue-400 focus:ring-blue-400"
               />
             </div>
 
             <div>
               <Label className="text-gray-700 font-medium">Тип объекта</Label>
               <Select value={objectType} onValueChange={setObjectType}>
-                <SelectTrigger className="mt-1 border-orange-200">
+                <SelectTrigger className="mt-1 border-blue-200">
                   <SelectValue placeholder="Выберите объект" />
                 </SelectTrigger>
                 <SelectContent>
@@ -120,7 +120,7 @@ export function LeadFormModal({ open, onClose }: LeadFormModalProps) {
                 placeholder="Опишите кратко: что нужно установить, размер участка..."
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="mt-1 border-orange-200 focus:border-orange-400 focus:ring-orange-400 resize-none"
+                className="mt-1 border-blue-200 focus:border-blue-400 focus:ring-blue-400 resize-none"
                 rows={3}
               />
             </div>
@@ -132,7 +132,7 @@ export function LeadFormModal({ open, onClose }: LeadFormModalProps) {
             <Button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 text-base"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 text-base"
             >
               {status === "loading" ? (
                 <span className="flex items-center gap-2">

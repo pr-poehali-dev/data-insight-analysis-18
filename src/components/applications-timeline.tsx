@@ -11,16 +11,16 @@ export function ApplicationsTimeline() {
             во всех зонах отдыха. Приезжаете — всё под контролем.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Камеры у ворот, входа и по периметру
             </div>
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Wi-Fi в доме, на террасе и в зоне барбекю
             </div>
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Уведомления при появлении чужих на участке
             </div>
           </div>
@@ -36,16 +36,16 @@ export function ApplicationsTimeline() {
             фоновая музыка, камеры для безопасности гулянок и охраны имущества.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Уличные точки доступа Wi-Fi для гостей
             </div>
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Камеры с широким углом обзора
             </div>
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Архив записей до 30 дней
             </div>
           </div>
@@ -61,16 +61,16 @@ export function ApplicationsTimeline() {
             централизованное управление. Охраняем дом, хозпостройки и всю территорию.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Mesh Wi-Fi — единая сеть по всей усадьбе
             </div>
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               IP-камеры с распознаванием движения
             </div>
-            <div className="flex items-center gap-3 text-orange-600 text-sm">
-              <div className="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"></div>
+            <div className="flex items-center gap-3 text-blue-600 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
               Центральный видеорегистратор с облачным бэкапом
             </div>
           </div>
@@ -80,7 +80,7 @@ export function ApplicationsTimeline() {
   ]
 
   return (
-    <section id="applications" className="py-20 bg-orange-50">
+    <section id="applications" className="py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-bold text-gray-900 mb-6">Объекты под ключ</h2>

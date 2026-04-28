@@ -56,15 +56,15 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="glow-border hover:shadow-lg transition-all duration-300 slide-up border-orange-100 hover:border-orange-300"
+              className="glow-border hover:shadow-lg transition-all duration-300 slide-up border-blue-100 hover:border-blue-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-                    <Icon name={feature.icon} size={24} className="text-orange-500" />
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                    <Icon name={feature.icon} size={24} className="text-blue-500" />
                   </div>
-                  <Badge variant="secondary" className="bg-orange-100 text-orange-700 border-orange-200">
+                  <Badge variant="secondary" className="bg-blue-100 text-blue-700 border-blue-200">
                     {feature.badge}
                   </Badge>
                 </div>

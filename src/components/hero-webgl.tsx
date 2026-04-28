@@ -57,8 +57,8 @@ export const Hero3DWebGL = () => {
           className="absolute left-0 right-0 h-1 opacity-30"
           style={{
             top: `${scanY}%`,
-            background: "linear-gradient(90deg, transparent, #f97316 40%, #f97316 60%, transparent)",
-            boxShadow: "0 0 18px 4px #f97316",
+            background: "linear-gradient(90deg, transparent, #3b82f6 40%, #3b82f6 60%, transparent)",
+            boxShadow: "0 0 18px 4px #3b82f6",
             transition: "top 0.016s linear",
           }}
         />
@@ -71,7 +71,7 @@ export const Hero3DWebGL = () => {
             alt="Камера видеонаблюдения"
             className="w-full h-full object-contain"
             style={{
-              filter: "drop-shadow(0 0 60px rgba(249,115,22,0.35)) drop-shadow(0 0 120px rgba(249,115,22,0.15))",
+              filter: "drop-shadow(0 0 60px rgba(59,130,246,0.35)) drop-shadow(0 0 120px rgba(59,130,246,0.15))",
               mixBlendMode: "lighten",
             }}
           />
